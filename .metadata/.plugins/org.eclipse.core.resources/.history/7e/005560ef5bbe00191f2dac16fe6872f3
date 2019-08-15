@@ -1,0 +1,83 @@
+package com.addressbook.service;
+
+import java.util.ArrayList;
+
+import com.addressbook.model.FamilyMember;
+import com.addressbook.resource.ReadingWritingJson;
+import com.addressbook.utility.Utility;
+
+public class AddressbookImp implements AddressbookInterface {
+
+	ReadingWritingJson json=new ReadingWritingJson();
+	ArrayList<FamilyMember> familyarray=new ArrayList<FamilyMember>();
+		
+		public FamilyMember addFamilyPerson() {
+			
+			System.out.println("enter the firstname of a person");
+			String firstname = Utility.inputString();
+			System.out.println("enter the lasttname of a person");
+			String lastname = Utility.inputString();
+			System.out.println("enter the address of a person");
+			String address = Utility.inputString();
+			System.out.println("enter the zipcode of a person");
+			int zipcode = Utility.inputInteger();
+			System.out.println("enter the state of a person");
+			String state = Utility.inputString();
+			System.out.println("enter the city of a person");
+			String city = Utility.inputString();
+			System.out.println("enter the phonenumber of a person");
+			String phonenumber = Utility.inputString();
+			
+			FamilyMember addressbook = new FamilyMember(firstname,lastname,address,city,state,zipcode,phonenumber);
+
+			
+			return addressbook;
+		}
+		
+		public void show() throws Exception
+		{
+			json.writeJson(familyarray);
+		}
+
+		
+		public ArrayList<FamilyMember> editFamilyCity(ArrayList<FamilyMember> addressbook) {
+
+			System.out.println("enter first name of the family person");
+			String firstname = Utility.inputString();
+			System.out.println("enter the city");
+			String city = Utility.inputString();
+			
+			for (FamilyMember i : addressbook) {
+				if (i.getFirstname().contentEquals(firstname)) {
+					i.setCity(city);
+
+					break;
+				}
+			}
+
+			return addressbook;
+
+		}
+
+		
+		public ArrayList<FamilyMember> deletFamily(ArrayList<FamilyMember> familyarray) throws Exception {
+
+			System.out.println("enter the firstname of the family person");
+			String firstname = Utility.inputString();
+
+			FamilyMember temp = null;
+
+			for (FamilyMember i : familyarray) {
+				if (firstname.equals(i.getFirstname())) {
+					temp = i;
+					break;
+				}
+			}
+
+			familyarray.remove(temp);
+			return familyarray;
+		}
+
+			
+	
+}

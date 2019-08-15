@@ -1,0 +1,10 @@
+package com.BridgeLabz.Programming.oops.deckofcards.main;
+
+public class Deckofcardsallocation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

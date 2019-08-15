@@ -1,0 +1,19 @@
+package com.BridgeLabz.Programming.oops.regex.main;
+
+import com.BridgeLabz.Programming.oops.regex.service.RegexIntr;
+
+public class RegexPattern {
+
+	public static void main(String[] args) {
+		
+		RegexIntr pattern=new Regexpatterniml();
+		pattern.getValidateData();
+		pattern.replaceData();
+		pattern.displayDta();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.bridgelabz.programming.oops.ricepulsewheat;
+
+import java.util.ArrayList;
+
+public class Driver {
+
+	public static void main(String[] args) throws Exception
+	{
+		JsonEditor readwrite=new JsonEditor();
+		
+		ArrayList<DataManagement> array=new ArrayList<DataManagement>();
+		DataManagement manage1=new DataManagement();
+		manage1.setName("Rice");
+		manage1.setPrice(150);
+		manage1.setWeight("50kg");
+		 
+		array.add(manage1);
+		
+		DataManagement manage2=new DataManagement();
+		manage2.setName("Rice");
+		manage2.setPrice(150);
+		manage2.setWeight("50kg");
+		
+		array.add(manage2);
+		
+		readwrite.writeJson(array);
+		readwrite.readJson();
+	}
+}

@@ -1,0 +1,15 @@
+package com.bridgelabz.cliniquemanagement.service;
+
+import java.io.IOException;
+
+public interface PatientInt {
+
+	public void fileRead() ;
+	public void addPatients(String name, int id, int mobilenumber, int age);
+	public void appointmentPatients(String name, int id, int mobilenumber, int age) throws Exception;
+	public void searchPatients(String name, int id, int mobilenumber, int age);
+	public void searchPatients(String name);
+	public void writefile() throws IOException;
+	
+	
+}

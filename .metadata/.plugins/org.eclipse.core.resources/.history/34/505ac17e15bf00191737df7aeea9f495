@@ -1,0 +1,50 @@
+package com.bridgelabz.commerciladataprocessing.main;
+
+import java.util.ArrayList;
+
+import com.bridgelabz.commerciladataprocessing.model.Bought;
+import com.bridgelabz.commerciladataprocessing.service.Implementation;
+
+public class StockAccount {
+
+	public static void main(String[] args) throws Exception {
+
+		ArrayList<Bought> transactionlist = new ArrayList<>();
+		
+		
+		Implementation stock=new Implementation();
+		
+		int choice = 0;
+		do {
+			System.out.println("press 1 for enter the share quantity you want to buy  : ");
+			StockAccount stockaccount = new StockAccount();
+
+			System.out.println("press 2 for enter the quantity you want to sell share : ");
+			choice = InputUtility.inputInteger();
+
+			switch (choice) {
+
+			case 1: {
+				
+				stock.buy();
+				
+				break;
+			}
+			case 2: {
+				
+				stock.sell();
+				
+				break;
+			}
+
+			default:
+
+				System.out.println("try again");
+				break;
+
+			}
+
+		} while (choice < 3);
+	}
+
+}

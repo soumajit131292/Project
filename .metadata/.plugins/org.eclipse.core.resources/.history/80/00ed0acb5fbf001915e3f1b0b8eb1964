@@ -1,0 +1,172 @@
+package com.bridgelabz.programming.oops.cliniquemanagement;
+
+import java.util.ArrayList;
+
+import com.BridgeLabz.Programming.function.InputUtility;
+
+public class FindAddDoctorOrPatient {
+	public Doctor addDoctor() {
+		Doctor doctor = new Doctor();
+		System.out.println("enter name of doctor");
+		String name = InputUtility.inputString();
+		doctor.setDoctorName(name);
+
+		System.out.println("enter id of doctor");
+		String id = InputUtility.inputString();
+		doctor.setDoctorId(id);
+
+		System.out.println("enter specialization of doctor");
+		String specialiazation = InputUtility.inputString();
+		doctor.setSpecialization(specialiazation);
+
+		System.out.println("enter availability of doctor as AM or PM or BOTH");
+		String availability = InputUtility.inputString();
+		doctor.setAvailability(availability);
+		
+		return doctor;
+	}
+	public Patient addPatient() {
+		Patient patient = new Patient();
+		System.out.println("enter name of doctor");
+		String name = InputUtility.inputString();
+		patient.setPatientName(name);
+
+		System.out.println("enter id of doctor");
+		String id = InputUtility.inputString();
+		patient.setPatientId(id);
+
+		System.out.println("enter mobile number of doctor");
+		String mobileNumber = InputUtility.inputString();
+		patient.setMobileNumber(mobileNumber);
+
+		System.out.println("enter age of doctor");
+		String age= InputUtility.inputString();
+		patient.setAge(age);
+		
+		return patient;
+	}
+
+	public Doctor findDoctorName(String doctorname,ArrayList<Doctor> doctor)
+	{
+		Doctor temp=null;
+		int flag=0;
+	  for(Doctor i: doctor)
+	  {
+		  if(doctorname.equals(i.getDoctorName()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Doctor findDoctorId(String id,ArrayList<Doctor> doctor)
+	{
+		Doctor temp=null;
+		int flag=0;
+	  for(Doctor i: doctor)
+	  {
+		  if(id.equals(i.getDoctorId()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Doctor findDoctorSpecialization(String specialization,ArrayList<Doctor> doctor)
+	{
+		Doctor temp=null;
+		int flag=0;
+	  for(Doctor i: doctor)
+	  {
+		  if(specialization.equals(i.getSpecialization()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Doctor findDoctorAvailability(String availability,ArrayList<Doctor> doctor)
+	{
+		Doctor temp=null;
+		int flag=0;
+	  for(Doctor i: doctor)
+	  {
+		  if(availability.equals(i.getAvailability()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Patient findPatienName(String patientname,ArrayList<Patient> patient)
+	{
+		Patient temp=null;
+		int flag=0;
+	  for(Patient i: patient)
+	  {
+		  if(patientname.equals(i.getPatientName()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Patient findPatienId(String patientid,ArrayList<Patient> patient)
+	{
+		Patient temp=null;
+		int flag=0;
+	  for(Patient i: patient)
+	  {
+		  if(patientid.equals(i.getPatientId()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	public Patient findPatienMobileNumber(String patientmobilenumber,ArrayList<Patient> patient)
+	{
+		Patient temp=null;
+		int flag=0;
+	  for(Patient i: patient)
+	  {
+		  if(patientmobilenumber.equals(i.getMobileNumber()))
+		  {
+			  flag=1;
+			  temp=i;
+		  }
+	  }
+	  //if(flag==1)
+		  return temp;
+	  //else
+		 // return temp.message();
+	}
+	
+	
+	
+	
+}

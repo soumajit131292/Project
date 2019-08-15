@@ -1,0 +1,7 @@
+package com.bridgelabz.ricepulsewheat.interfaces;
+
+public interface Methodsused {
+
+	public void dataEntery() throws Exception;
+	
+}

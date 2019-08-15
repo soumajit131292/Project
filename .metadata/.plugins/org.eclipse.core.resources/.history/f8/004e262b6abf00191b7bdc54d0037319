@@ -1,0 +1,9 @@
+package com.bridgelabz.programming.oops.companysharelinkedlist;
+
+public interface UsingMethod {
+
+	abstract void addDeletToLinkeedList();
+	abstract void addToQueueLinkedList();
+
+	
+}

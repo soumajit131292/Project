@@ -1,0 +1,43 @@
+package com.bridgeLabz.programming.regexpattern;
+
+import java.time.LocalDate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import com.BridgeLabz.Programming.Algorithm.Input;
+import com.BridgeLabz.Programming.Algorithm.Utility;
+
+public class regex {
+	private String NAME = "<<name>>";
+	private String FULLNAME = "<<full name>>";
+	private String CONTACT_NO = "<<91-xxxxxxxxxx>>";
+	private String DATE = "<<01/01/2016>>";
+
+	public String setData(String text) {
+
+		String firstname,lastname,mobilenumber,date;
+		boolean checkresult=false;
+		do {
+			firstname=Input.inputString();
+			checkresult=Pattern.matches("[a-zA-Z]",firstname);
+		}while(!checkresult);
+		boolean checkresult2=false;
+		do {
+			mobilenumber=Input.inputString();
+			checkresult2=Pattern.matches("[789]{1}[0-9]{9}",mobilenumber);
+		}while(!checkresult2);
+		boolean checkresult3=false;
+		do {
+			lastname=Input.inputString();
+			checkresult3=Pattern.matches("^[a-zA-Z ]*$",lastname);
+		}while(!checkresult3);
+		
+		String dates=LocalDate.now().toString();
+		
+		
+		return text;
+		
+		
+	}
+
+}

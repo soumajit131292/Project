@@ -1,0 +1,5 @@
+package com.bridgelabz.cliniquemanagement.service;
+
+public interface PatientInt {
+
+}

@@ -1,0 +1,18 @@
+package com.addressbook.resource;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.addressbook.model.FamilyMember;
+import com.google.gson.Gson;
+
+public class ReadingWritingJson {
+
+	ArrayList<FamilyMember> list=new ArrayList<>();
+	
+}

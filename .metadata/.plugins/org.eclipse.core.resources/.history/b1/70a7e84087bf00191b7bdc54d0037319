@@ -1,0 +1,54 @@
+package com.bridgelabz.ricepulsewheat.implementation;
+
+import java.io.PrintWriter;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.bridgelabz.ricepulsewheat.interfaces.Methodsused;
+
+public class Implementedmethod implements Methodsused {
+
+	public void dataEntery() throws Exception
+	{
+		/*JsonEditor readwrite=new JsonEditor();
+		
+		ArrayList<DataManagement> array=new ArrayList<DataManagement>();
+		DataManagement manage1=new DataManagement();
+		manage1.setName("Rice");
+		manage1.setPrice(150);
+		manage1.setWeight("50kg");
+		 
+		array.add(manage1);
+		
+		DataManagement manage2=new DataManagement();
+		manage2.setName("wheat");
+		manage2.setPrice(170);
+		manage2.setWeight("30kg");
+		
+		array.add(manage2);
+		
+		readwrite.writeJson(array);
+		readwrite.readJson();*/
+		
+		JSONObject obj=new JSONObject();
+		obj.put("rice","basmati");
+		obj.
+		
+		
+		/*JSONObject object=new JSONObject();
+		String path="/home/admin1/current/Bridgelabz/src/com/bridgelabz/ricepulsewheat/implementation/datamanagement.json";
+		Object object=new JSONParser().parse(new PrintWriter(path));*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

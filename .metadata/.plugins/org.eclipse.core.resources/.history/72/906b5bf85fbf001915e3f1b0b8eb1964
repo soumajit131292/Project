@@ -1,0 +1,16 @@
+package com.bridgelabz.programming.oops.companysharelinkedlist;
+
+public class CompanyLinkedlist {
+
+	public static void main(String[] args) throws MyException{
+
+		try {
+			new Methods().addDeletToLinkeedList();
+			throw new MyException("no such file is there");
+		} catch (Exception e) {
+			System.out.println("no such file is there");
+		}
+
+	}
+
+}

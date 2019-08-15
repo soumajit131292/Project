@@ -1,0 +1,8 @@
+package com.bridgelabz.stockexchange.interfaces;
+
+public interface TransactionMethods {
+
+	
+	abstract void stockexchangequeue() throws Exception;
+	
+}

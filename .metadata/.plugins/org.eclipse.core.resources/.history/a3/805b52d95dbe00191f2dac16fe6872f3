@@ -1,0 +1,47 @@
+package com.addressbook.model;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Comparing {
+
+	Comparator<FamilyMember> com = new Comparator<FamilyMember>() {
+		public int compare(FamilyMember o1, FamilyMember o2) {
+
+			if (o1.getZipcode() > (o2.getZipcode()))
+				return 1;
+			else if (o1.getZipcode() < (o2.getZipcode()))
+				return -1;
+			else {
+				return o1.getFirstname().compareTo(o2.getFirstname());
+
+			}
+		}
+	};
+	Comparator<FamilyMember> com1 = new Comparator<FamilyMember>() {
+		public int compare(FamilyMember o1, FamilyMember o2) {
+
+			int result = o1.getLastname().compareTo(o2.getLastname());
+			if (result == 0) {
+				return o1.getFirstname().compareTo(o2.getFirstname());
+			}
+			return result;
+
+		}
+	};
+
+	public ArrayList<FamilyMember> sortLastnameFamily(ArrayList<FamilyMember> array) throws Exception {
+
+		Collections.sort(array, com1);
+		return array;
+
+	}
+
+	public ArrayList<FamilyMember> sortZipcodeFamily(ArrayList<FamilyMember> array) throws Exception {
+
+		Collections.sort(array, com);
+		return array;
+	
+	}
+}

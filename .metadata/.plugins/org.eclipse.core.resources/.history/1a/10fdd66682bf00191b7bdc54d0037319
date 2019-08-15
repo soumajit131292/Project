@@ -1,0 +1,17 @@
+package com.bridgelabz.datetimequeue.main;
+
+import com.bridgelabz.datetimequeue.service.Datetimeinqueue;
+
+public class Datetimemaintain {
+
+	public static void main(String[] args) throws Exception 
+	{
+		
+		Datetimeinqueue datetime=new Datetimeinqueue();
+		datetime.datetimeinsertioninqueue();
+		
+		
+	}
+	
+	
+}

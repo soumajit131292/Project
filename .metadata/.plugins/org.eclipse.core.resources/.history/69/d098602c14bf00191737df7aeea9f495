@@ -1,0 +1,226 @@
+package com.bridgelabz.commerciladataprocessing.main;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.bridgelabz.commerciladataprocessing.model.Bought;
+import com.bridgelabz.commerciladataprocessing.model.CompanyShares;
+import com.google.gson.Gson;
+
+public class StockAccount {
+
+	JSONObject jsonobj = new JSONObject();
+	JSONArray jsonarray = new JSONArray();
+	ArrayList<Bought> userlist = new ArrayList<>();
+	ArrayList<CompanyShares> companylist = new ArrayList<>();
+	JSONParser parser = new JSONParser();
+
+	public void jsonReadUser() {
+
+		try {
+
+			jsonarray = (JSONArray) parser.parse(new FileReader(
+					"C:\\Users\\souma\\eclipse-workspace\\Commercial data processing\\src\\com\\bridgelabz\\commerciladataprocessing\\resource\\writejack.json"));
+			for (Object obj : jsonarray) {
+				jsonobj = (JSONObject) obj;
+				String stockChanges = (String) (jsonobj.get("stockChange"));
+				String stockName = (String) (jsonobj.get("stockName"));
+				int shareNumber = ((Long) (jsonobj.get("shareNumber"))).intValue();
+				double sharePrice = (Double) (jsonobj.get("sharePrice"));
+				String date = (String) (jsonobj.get("date"));
+				String time = (String) (jsonobj.get("time"));
+
+				Bought userbought = new Bought(stockChanges, stockName, shareNumber, sharePrice, date, time);
+				userlist.add(userbought);
+				System.out.println(userlist);
+
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+
+	}
+	public void jsonReadCompany() {
+
+		try {
+
+			jsonarray = (JSONArray) parser.parse(new FileReader(
+					"C:\\Users\\souma\\eclipse-workspace\\Commercial data processing\\src\\com\\bridgelabz\\commerciladataprocessing\\resource\\jsonfile.json"));
+			for (Object obj : jsonarray) {
+				jsonobj = (JSONObject) obj;
+				
+				String stockName = (String) (jsonobj.get("stockName"));
+				int shareNumber = ((Long) (jsonobj.get("shareNumber"))).intValue();
+				double sharePrice = (Double) (jsonobj.get("sharePrice"));
+				
+
+				CompanyShares companyshare = new CompanyShares(stockName, shareNumber, sharePrice);
+				companylist.add(companyshare);
+				System.out.println(companylist);
+
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+
+	}
+	
+	public void writeUser()
+	{
+		try {
+			Gson gson=new Gson();
+			String json=gson.toJson(userlist);
+			FileWriter filewrite=new FileWriter("C:\\\\Users\\\\souma\\\\eclipse-workspace\\\\Commercial data processing\\\\src\\\\com\\\\bridgelabz\\\\commerciladataprocessing\\\\resource\\\\writejack.json");
+			filewrite.write(json);
+			filewrite.close();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getLocalizedMessage());
+		}
+		
+	}
+
+	public void writeCompany()
+	{
+		
+		
+	}
+	public Bought buy(int amount, String companyname) throws Exception {
+
+		ArrayList<CompanyShares> companyshare = reading.readJson();
+
+		// forEach
+		CompanyShares share = null;
+		for (CompanyShares i : companyshare) {
+			if (companyname.equals(i.getStockname())) {
+				share = i;
+				break;
+			}
+
+		}
+
+		int shareamount = share.getSharenumber();
+		// in Interface
+		Bought bought = new Bought();
+		if (shareamount > amount) {
+			int totalamount = shareamount - amount;
+
+			share.setSharenumber(amount);
+
+			bought.setSharenumber(share.getSharenumber());
+			bought.setShareprice(share.getShareprice());
+			bought.setStockChanges("buy");
+			bought.setStockname(share.getStockname());
+			// transactionlist.add(bought);
+
+			// reading.updateuser(transactionlist);
+			save(totalamount, share);
+
+			printReport(companyshare);
+			return bought;
+		} else {
+			System.out.println("share is not available ");
+			return bought;
+		}
+	}
+
+	public Bought sell(int amount, String companyname) throws Exception {
+
+		ArrayList<CompanyShares> companyshare = reading.readJson();
+		Bought bought = new Bought();
+		CompanyShares share = null;
+		for (CompanyShares i : companyshare) {
+			if (companyname.equals(i.getStockname())) {
+				share = i;
+				break;
+			}
+
+		}
+
+		int shareamount = share.getSharenumber();
+
+		if (shareamount > amount) {
+			int totalamount = shareamount + amount;
+
+			share.setSharenumber(amount);
+
+			bought.setSharenumber(share.getSharenumber());
+			bought.setShareprice(share.getShareprice());
+			bought.setStockChanges("sell");
+			bought.setStockname(share.getStockname());
+			// transactionlist.add(bought);
+
+			// reading.updateuser(transactionlist);
+			save(totalamount, share);
+
+			printReport(companyshare);
+			return bought;
+		} else {
+			System.out.println("reduce your share amount");
+			return bought;
+		}
+
+	}
+
+	public void save(int totalvalue, CompanyShares companyshare) {
+		companyshare.setSharenumber(totalvalue);
+
+	}
+
+	public void printReport(ArrayList<CompanyShares> array) throws Exception {
+		reading.writeJson(array);
+	}
+
+	public static void main(String[] args) throws Exception {
+
+		ArrayList<Bought> transactionlist = new ArrayList<>();
+		boolean value = true;
+		while (value) {
+			System.out.println("press 1 for enter the share quantity you want to buy  : ");
+			StockAccount stockaccount = new StockAccount();
+
+			System.out.println("press 2 for enter the quantity you want to sell share : ");
+			int choice = InputUtility.inputInteger();
+
+			switch (choice) {
+
+			case 1: {
+				System.out.println("enter the company name you want to buy share : ");
+				String companyname = InputUtility.inputString();
+				System.out.println("enter the share you want to buy : ");
+				int amount = InputUtility.inputInteger();
+				transactionlist.add(stockaccount.buy(amount, companyname));
+				reading.updateuser(transactionlist);
+				break;
+			}
+			case 2: {
+				System.out.println("enter the company name you want to sell share : ");
+				String companyname = InputUtility.inputString();
+				System.out.println("enter the amount you want to sell : ");
+				int amount = InputUtility.inputInteger();
+				transactionlist.add(stockaccount.sell(amount, companyname));
+				reading.updateuser(transactionlist);
+				break;
+			}
+
+			default:
+
+				value = false;
+				System.out.println("try again");
+				System.exit(0);
+
+			}
+
+		}
+	}
+
+}

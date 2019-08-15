@@ -1,0 +1,81 @@
+package com.addressbook.resource;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.addressbook.model.FamilyMember;
+import com.google.gson.Gson;
+
+public class ReadingWritingJson {
+
+	public void readJson() {
+
+		JSONParser parser=new JSONParser();
+	
+		
+	
+			try {
+				jsonArray = (JSONArray) parser.parse(new FileReader(
+						"C:\\\\Users\\\\souma\\\\eclipse-workspace\\\\addressbook\\\\src\\\\com\\\\addressbook\\\\resource\\\\addressbookoffamily.json"));
+
+				for (Object obj : jsonArray) {
+					AddressBook addressdetail = new AddressBook();
+
+					jobject = (JSONObject) obj;
+					String firstname = (String) jobject.get("firstName");
+					String lastname = (String) jobject.get("lastName");
+					String city = (String) jobject.get("city");
+					String address = (String) jobject.get("address");
+					String state = (String) jobject.get("state");
+					String phonenumber = (String)) jobject.get("phonenumber");
+					int zipcode = ((int) jobject.get("zipCode"));
+
+					addressdetail.setFirstName(firstname);
+					addressdetail.setLastName(lastname);
+					addressdetail.setCity(city);
+					addressdetail.setAddress(address);
+					addressdetail.setState(state);
+					addressdetail.setPhonenumber(phonenumber);
+					addressdetail.setZipcode(zipcode);
+
+					addressdetails.add(addressdetail);
+				}
+				System.out.println(addressdetails.toString());
+			}
+
+			catch (Exception e) {
+				//throw new CustomException("Exception occured while reading your file", e);
+				System.out.println(e.getLocalizedMessage());
+			}
+
+		}
+	
+		
+		
+		
+		
+	
+
+	public void writeJson(ArrayList<FamilyMember> list) throws Exception {
+		String path = "C:\\Users\\souma\\eclipse-workspace\\addressbook\\src\\com\\addressbook\\resource\\addressbookoffamily.json";
+
+		
+		Gson gson = new Gson();
+		//System.out.println(list);
+		JSONObject obj=new JSONObject();
+		//obj.put("family",list);
+
+		String json = gson.toJson(list);
+
+		FileWriter write = new FileWriter(path);
+		write.write(json);
+		write.close();
+
+	}
+
+}

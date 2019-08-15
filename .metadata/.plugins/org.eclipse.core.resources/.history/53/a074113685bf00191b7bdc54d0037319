@@ -1,0 +1,10 @@
+package com.bridgelabz.jsoninventory.interfaces;
+
+public interface Methodsused{
+
+	public void writeToJson()   throws Exception;
+	public void readJson()   throws Exception;
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package com.BridgeLabz.Programming.oops.ricewheatpulse.main;
+
+import com.bridgelabz.ricepulsewheat.implementation.Implementedmethod;
+
+public class Driver {
+
+	public static void main(String[] args) throws Exception
+	{
+		Implementedmethod object=new Implementedmethod();
+		object.dataEntery();
+		
+		
+	}
+}

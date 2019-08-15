@@ -1,0 +1,51 @@
+package com.addressbook.resource;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.addressbook.model.FamilyMember;
+import com.google.gson.Gson;
+
+public class ReadingWritingJson {
+
+	public void readJson() throws Exception{
+
+		JSONParser parser=new JSONParser();
+	
+		FileReader reader=new FileReader("C:\\Users\\souma\\eclipse-workspace\\addressbook\\src\\com\\addressbook\\resource\\addressbookoffamily.json");
+		Object obj=parser.parse(reader);
+		JSONArray jsonarray=(JSONArray)obj;
+		
+		for(int i=0;i<jsonarray.length();i++)
+		{
+			
+		}
+		
+		
+		
+		
+	}
+
+	public void writeJson(ArrayList<FamilyMember> list) throws Exception {
+		String path = "C:\\Users\\souma\\eclipse-workspace\\addressbook\\src\\com\\addressbook\\resource\\addressbookoffamily.json";
+
+		
+		Gson gson = new Gson();
+		//System.out.println(list);
+		JSONObject obj=new JSONObject();
+		obj.put("family",list);
+
+		String json = gson.toJson(list);
+
+		FileWriter write = new FileWriter(path);
+		write.write(json);
+		write.close();
+
+	}
+
+}

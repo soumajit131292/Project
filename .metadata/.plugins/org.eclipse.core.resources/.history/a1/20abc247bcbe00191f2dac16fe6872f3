@@ -1,0 +1,10 @@
+package com.bridgelabz.cliniquemanagement.model;
+
+public class Doctor {
+
+	private String name;
+	private int id;
+	private String specialization;
+	private String availability;
+	
+}

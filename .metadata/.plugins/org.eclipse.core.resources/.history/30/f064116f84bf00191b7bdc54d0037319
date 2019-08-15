@@ -1,0 +1,29 @@
+package com.bridgelabz.programming.oops.ricepulsewheat;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JsonEditor {
+
+	ObjectMapper mapper=new ObjectMapper();
+	DataManagement result=new DataManagement();
+	public void writeJson(ArrayList<DataManagement> array) throws Exception
+	{
+		mapper.writeValue(new File("/home/soumajit/Desktop/pendrive/workspace/BridgeLabz/src/com/bridgelabz/programming/oops/ricepulsewheat/datamanagement.json"), array);
+	}
+	
+	public void readJson() throws Exception
+	{
+		ArrayList<DataManagement> result=mapper.readValue(new File("/home/soumajit/Desktop/pendrive/workspace/BridgeLabz/src/com/bridgelabz/programming/oops/ricepulsewheat/datamanagement.json"), new TypeReference<ArrayList<DataManagement>>() {});
+		for(DataManagement i: result)
+		{
+			System.out.print(i.getName()+" "+i.getPrice()+" "+i.getWeight());
+			System.out.print("\n");
+		}
+		
+	}
+	
+}

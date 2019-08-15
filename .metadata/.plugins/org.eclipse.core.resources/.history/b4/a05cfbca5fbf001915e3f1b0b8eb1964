@@ -1,0 +1,55 @@
+package com.bridgelabz.programming.oops.cliniquemanagement;
+
+public class Appointment {
+	Integer doctorid;
+	String date;
+
+	
+	public int getDoctorid() 
+	{
+		return doctorid;
+	}
+	public void setDoctorid(int doctorid) 
+	{
+		this.doctorid = doctorid;
+	}
+
+	public String getDate() 
+	{
+		return date;
+	}
+	public void setDate(String date) 
+	{
+		this.date = date;
+	}
+
+	public String toString() 
+	{
+		return "Appointment [did=" + doctorid + ", date=" + date +  "]";
+	}
+
+	public int hashCode()
+	{
+    	return this.doctorid.hashCode()+this.date.hashCode();
+	}
+
+	public boolean equals(Object object)
+	{
+    	if (object == null) 
+			return false;
+    	if (object == this) 
+			return true;
+    	if (getClass()!= object.getClass())
+			return false;
+    	
+    	Appointment appointment = (Appointment) object;
+
+		if((this.doctorid==appointment.doctorid) && (this.date.equals(appointment.date)))
+			return true;
+		else
+			return false;
+	
+	
+	
+}
+}

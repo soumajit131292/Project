@@ -1,0 +1,55 @@
+package com.bridgelabz.programming.oops.cliniquemanagement;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import com.BridgeLabz.Programming.function.InputUtility;
+
+public class Driver {
+
+	public static void main(String[] args) {
+
+		Doctor doctor = new Doctor();
+		Patient patient = new Patient();
+		Appointment appointment=new Appointment();
+		FindAddDoctorOrPatient addfind = new FindAddDoctorOrPatient();
+		ArrayList<Doctor> doctorarray = new ArrayList<>();
+		ArrayList<Patient> patientrarray = new ArrayList<>();
+		boolean looprunner=true;
+		HashMap<Appointment,Integer> appointdoctor=new HashMap<Appointment,Integer>();
+		while(looprunner) {
+		System.out.println("press 1 for find doctor\npress 2 for add doctor\npress 3 for find patient\npress 4 for add patient");
+		int choice=InputUtility.inputInteger();
+		switch(choice)
+		{
+		case 1:
+		{
+			System.out.println("enter doctors name");
+		//	String doctorname=InputUtility.inputString();
+//			Doctor result= doctorarray.stream()
+//					.filter(x -> doctorname.equals(x.getDoctorName())).collect(Collectors.toList());
+//			System.out.println(result);
+			break;
+		}
+		case 2:
+		{
+			
+			addfind.addDoctor();
+			break;
+		}
+		default :
+		{
+			System.exit(0);
+		}
+		}
+		}
+		
+		
+		
+		
+		
+			}
+
+}

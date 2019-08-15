@@ -1,0 +1,10 @@
+package com.addressbook.main;
+
+public class FamilyBook {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

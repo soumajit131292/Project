@@ -1,0 +1,9 @@
+package com.bridgelabz.programming.oops.companysharelinkedlist;
+
+public class MyException extends Exception {
+
+	public MyException(String message) {
+		super(message);
+	}
+
+}

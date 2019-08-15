@@ -1,0 +1,16 @@
+package com.bridgelabz.cliniquemanagement.main;
+
+import com.bridgelabz.cliniquemanagement.service.AppointInt;
+import com.bridgelabz.cliniquemanagement.service.AppointmentImp;
+
+public class Appointment {
+
+	public static void main(String[] args) {
+	
+		
+		AppointInt takeappoint=new AppointmentImp();
+		DoctorInt doctor=new DoctorImp();
+
+	}
+
+}

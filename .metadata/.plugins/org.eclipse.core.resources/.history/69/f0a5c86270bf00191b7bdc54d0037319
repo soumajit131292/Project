@@ -1,0 +1,61 @@
+package com.BridgeLabz.Programming.oops.regex.service;
+
+import java.time.LocalDate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import com.BridgeLabz.Programming.Algorithm.Input;
+
+public class Regexpatterniml {
+
+	String firstname,lastname,mobilenumber;
+	String dates=LocalDate.now().toString();
+	
+	public void getValidateData()
+	{
+		boolean checkresult=false;
+		do {
+			firstname=Input.inputString();
+			checkresult=Pattern.matches("[a-zA-Z]",firstname);
+		}while(!checkresult);
+		boolean checkresult2=false;
+		do {
+			mobilenumber=Input.inputString();
+			checkresult2=Pattern.matches("[789]{1}[0-9]{9}",mobilenumber);
+		}while(!checkresult2);
+		boolean checkresult3=false;
+		do {
+			lastname=Input.inputString();
+			checkresult3=Pattern.matches("^[a-zA-Z ]*$",lastname);
+		}while(!checkresult3);
+		
+		
+	}
+	public void replaceData()
+	{
+		
+		Pattern pattern = Pattern.compile(NAME);
+		Matcher matcher = pattern.matcher(text);
+		text = matcher.replaceAll(firstname);
+
+		pattern = Pattern.compile(FULLNAME);
+		matcher = pattern.matcher(text);
+		text = matcher.replaceAll(fullname);
+
+		pattern = Pattern.compile(CONTACT_NO);
+		matcher = pattern.matcher(text);
+		text = matcher.replaceAll(mobilenumber);
+
+		pattern = Pattern.compile(DATE);
+		matcher = pattern.matcher(text);
+		
+		text = matcher.replaceAll(dates);
+
+	}
+	public void displayDta()
+	{
+		
+	}
+
+	
+}

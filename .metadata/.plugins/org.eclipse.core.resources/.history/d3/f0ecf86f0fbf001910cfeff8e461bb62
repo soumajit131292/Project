@@ -1,0 +1,59 @@
+package com.bridgelabz.commerciladataprocessing.model;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import lombok.ToString;
+@ToString
+public class Bought {
+	
+
+	private String stockChanges;
+	private String stockName;
+	private int shareNumber;
+	private double sharePrice;
+	private String date;
+	private String time;
+
+	public String getLocalTime() {
+		return LocalTime.now().toString();
+	}
+
+	public void setStockChanges(String stockChanges) {
+		this.stockChanges = stockChanges;
+	}
+
+	public String getStockChanges() {
+		return stockChanges;
+	}
+
+	public String getStockname() {
+		return stockName;
+	}
+
+	public int getSharenumber() {
+		return shareNumber;
+	}
+
+	public double getShareprice() {
+		return sharePrice;
+	}
+
+	public String getDatetime() {
+		return date = LocalDate.now().toString();
+	}
+	// Setter Methods
+
+	public void setStockname(String stockName) {
+		this.stockName = stockName;
+	}
+
+	public void setSharenumber(int shareNumber) {
+		this.shareNumber = shareNumber;
+	}
+
+	public void setShareprice(double sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+
+}

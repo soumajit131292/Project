@@ -1,0 +1,57 @@
+package com.bridgelabz.commerciladataprocessing.model;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Bought {
+	// Naming conv
+
+	private String stockChanges;
+	private String stockName;
+	private int shareNumber;
+	private double sharePrice;
+	private String date;
+	private String time;
+
+	public String getLocalTime() {
+		return LocalTime.now().toString();
+	}
+
+	public void setStockChanges(String stock_changes) {
+		this.stock_changes = stock_changes;
+	}
+
+	public String getStockChanges() {
+		return stock_changes;
+	}
+
+	public String getStockname() {
+		return stockname;
+	}
+
+	public int getSharenumber() {
+		return sharenumber;
+	}
+
+	public double getShareprice() {
+		return shareprice;
+	}
+
+	public String getDatetime() {
+		return date = LocalDate.now().toString();
+	}
+	// Setter Methods
+
+	public void setStockname(String stockname) {
+		this.stockname = stockname;
+	}
+
+	public void setSharenumber(int sharenumber) {
+		this.sharenumber = sharenumber;
+	}
+
+	public void setShareprice(double shareprice) {
+		this.shareprice = shareprice;
+	}
+
+}

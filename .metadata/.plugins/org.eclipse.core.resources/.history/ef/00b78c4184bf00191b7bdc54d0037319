@@ -1,0 +1,20 @@
+package com.bridgeLabz.programming.regexpattern;
+import com.BridgeLabz.Programming.Algorithm.*;
+public class driver {
+
+	public static void main(String[] args) throws Exception{
+		
+		
+		String text=new Utility().readTextFile();
+		System.out.println(text);
+		try {
+		 String msg=new  regex().setData(text);
+		 System.out.println(msg);
+		}
+		catch(Exception e) {
+		System.out.println("enter valid date");
+		}
+
+	}
+
+}

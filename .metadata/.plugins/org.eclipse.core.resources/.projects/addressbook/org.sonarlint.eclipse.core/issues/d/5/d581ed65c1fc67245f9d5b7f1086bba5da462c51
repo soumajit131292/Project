@@ -1,0 +1,18 @@
+
+Zsquid:S1199;"-Extract this nested code block into a method.(Ó‚ïHRMINORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÆÀûıHŸRMAJORZ
+CODE_SMELL
+_squid:S1199+"-Extract this nested code block into a method.(úÀôãùÿÿÿÿH›RMINORZ
+CODE_SMELL
+i"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(¨ÕÉH RCRITICALZ
+CODE_SMELL
+_squid:S1199""-Extract this nested code block into a method.(ğÁ–ÓûÿÿÿÿHšRMINORZ
+CODE_SMELL
+Zsquid:S11994"-Extract this nested code block into a method.(ÎŞèºHœRMINORZ
+CODE_SMELL
+_squid:S1199B"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿHRMINORZ
+CODE_SMELL
+_squid:S1199"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿH™RMINORZ
+CODE_SMELL

@@ -1,0 +1,16 @@
+ package com.BridgeLabz.Programming.oops.jsoninventory.main;
+
+import com.BridgeLabz.Programming.oops.jsoninventory.service.Implementedmethods;
+
+public class Driver {
+
+	public static void main(String[] args) throws Exception {
+       
+		Implementedmethods object=new Implementedmethods();
+		object.writeToJson();
+		object.readJson();
+		
+
+	}
+
+}

@@ -1,0 +1,41 @@
+
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÜüêÑHÎRMAJORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğŸäHÏRMAJORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÄàªÿHÑRMAJORZ
+CODE_SMELL
+j
+squid:S106$"9Replace this use of System.out or System.err by a logger.(âÏàüÿÿÿÿHÔRMAJORZ
+CODE_SMELL
+Zsquid:S1604b"(Make this anonymous inner class a lambda(è‹ûïıÿÿÿÿHÍRMAJORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(ìùºÖùÿÿÿÿHĞRMAJORZ
+CODE_SMELL
+f
+squid:S106›"9Replace this use of System.out or System.err by a logger.(‡É»áHØRMAJORZ
+CODE_SMELL
+qsquid:S2095©"HUse try-with-resources or close this "FileWriter" in a "finally" clause.( ‹ßâHËRBLOCKERZBUG
+e
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ßÁõ‚HÒRMAJORZ
+CODE_SMELL
+e
+squid:S1066"9Replace this use of System.out or System.err by a logger.(öœ¦ÄHÖRMAJORZ
+CODE_SMELL
+e
+squid:S1064"9Replace this use of System.out or System.err by a logger.(çó“ßHÕRMAJORZ
+CODE_SMELL
+j
+squid:S106E"9Replace this use of System.out or System.err by a logger.(ˆØ†½ûÿÿÿÿH×RMAJORZ
+CODE_SMELL
+tsquid:S1075¡"ARefactor your code to get this URI from a customizable parameter.(ÁÿˆšşÿÿÿÿHÙRMINORZ
+CODE_SMELL
+Zsquid:S1604U"(Make this anonymous inner class a lambda(ÅÛÆÁùÿÿÿÿHÌRMAJORZ
+CODE_SMELL
+e
+squid:S106""9Replace this use of System.out or System.err by a logger.(šƒ–ÚHÓRMAJORZ
+CODE_SMELL

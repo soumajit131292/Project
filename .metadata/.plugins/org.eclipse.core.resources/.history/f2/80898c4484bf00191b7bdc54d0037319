@@ -1,0 +1,22 @@
+package com.bridgelabz.programming.oops.transactiondetails;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class Jsonreadwrite {
+
+	ObjectMapper mapper = new ObjectMapper();
+	String path = "/home/soumajit/Desktop/pendrive/workspace/BridgeLabz/src/com/bridgelabz/programming/oops/transactiondetails/writejack.json";
+
+	public ArrayList<Bought> readjson() throws Exception {
+
+		return mapper.readValue(new File(path), new TypeReference<List<Bought>>() {
+		});
+
+	}
+
+}

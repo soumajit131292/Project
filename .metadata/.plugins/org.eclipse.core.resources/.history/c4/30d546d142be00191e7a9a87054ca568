@@ -1,0 +1,34 @@
+package com.addressbook.service;
+
+import java.util.ArrayList;
+
+public interface AddressbookMethods {
+
+	public class Addressbook {
+
+		private ArrayList<Family> familybook;
+		private ArrayList<Friend> friendbook;
+
+		public void setFamily(ArrayList<Family> familybook) {
+			this.familybook = familybook;
+		}
+
+		public void setFriend(ArrayList<Friend> friendbook) {
+			this.friendbook = friendbook;
+		}
+
+		public ArrayList<Family> getFamilybook() {
+			return familybook;
+		}
+
+		public ArrayList<Friend> getFriendbook() {
+			return friendbook;
+		}
+		
+		
+
+	}
+	
+	
+	
+}

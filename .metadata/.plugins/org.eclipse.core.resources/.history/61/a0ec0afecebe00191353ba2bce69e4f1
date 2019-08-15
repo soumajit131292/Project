@@ -1,0 +1,28 @@
+package com.bridgelabz.programming.oops.addressbook;
+
+import java.util.ArrayList;
+
+public class Addressbook {
+
+	private ArrayList<Family> familybook;
+	private ArrayList<Friend> friendbook;
+
+	public void setFamily(ArrayList<Family> familybook) {
+		this.familybook = familybook;
+	}
+
+	public void setFriend(ArrayList<Friend> friendbook) {
+		this.friendbook = friendbook;
+	}
+
+	public ArrayList<Family> getFamilybook() {
+		return familybook;
+	}
+
+	public ArrayList<Friend> getFriendbook() {
+		return friendbook;
+	}
+	
+	
+
+}

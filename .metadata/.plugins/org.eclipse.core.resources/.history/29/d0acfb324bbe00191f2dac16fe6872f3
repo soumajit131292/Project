@@ -1,0 +1,83 @@
+package com.addressbook.main;
+
+import java.util.ArrayList;
+
+import com.addressbook.model.FamilyMember;
+import com.addressbook.service.AddressbookImp;
+import com.addressbook.service.AddressbookInterface;
+import com.addressbook.utility.Utility;
+
+
+
+public class FamilyBook {
+
+	public static void main(String[] args) {
+	
+		
+		ArrayList<FamilyMember> familybookarray = new ArrayList<>();
+		
+		int choice;
+		
+		AddressbookInterface addressbookapp=new AddressbookImp(); 
+
+		do {
+			System.out.println(
+					"1.add family person\n2.add friend\n3.edit family city\n4.edit friend city\n6.sort family person last name\n7.sort friend last name\n8.sort family member zipcode\n9.sort friend zip code\n10.delete famile member\n11.delete friend member");
+
+			choice = Utility.inputInteger();
+			switch (choice) {
+			// 1 for add family person
+			case 1: {
+
+				familybookarray.add(addressbookapp.addFamilyPerson());
+
+				break;
+
+			}
+          
+			// edit family person city
+			case 3: {
+
+				familybookarray =addressbookapp.editFamilyCity(familybookarray);
+		
+
+				break;
+
+			}
+
+			
+
+			// sort family person last name
+			case 5: {
+
+				familybookarray = familybook.sortLastnameFamily(familybookarray);
+	
+
+				break;
+
+			}
+			
+			// sort family member by zipcode
+			case 7: {
+				familybookarray = familybook.sortZipcodeFamily(familybookarray);
+			
+
+				break;
+			}
+			
+			// delete family person
+			case 9: {
+
+				familybookarray = addressbookapp.deletFamily(familybookarray);
+				
+				break;
+			}
+			
+			}
+			//readwrite.writeJson(addressbookobject);
+		} while (choice < 11);
+
+
+	}
+
+}

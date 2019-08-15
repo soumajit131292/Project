@@ -1,0 +1,43 @@
+package com.bridgeLabz.programming.regexpattern;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import com.BridgeLabz.Programming.Algorithm.Utility;
+
+public class regex {
+	private String NAME = "<<name>>";
+	private String FULLNAME = "<<full name>>";
+	private String CONTACT_NO = "<<91-xxxxxxxxxx>>";
+	private String DATE = "<<01/01/2016>>";
+
+	public String setData(String text) {
+
+		do {
+			String firstname=Utility.I
+		}
+		
+		
+		Pattern pattern = Pattern.compile(NAME);
+		Matcher matcher = pattern.matcher(text);
+		text = matcher.replaceAll(new Utility().getName());
+
+		pattern = Pattern.compile(FULLNAME);
+		matcher = pattern.matcher(text);
+		text = matcher.replaceAll(new Utility().getFullname());
+
+		pattern = Pattern.compile(CONTACT_NO);
+		matcher = pattern.matcher(text);
+		text = matcher.replaceAll(new Utility().getMobilenumber());
+
+		pattern = Pattern.compile(DATE);
+		matcher = pattern.matcher(text);
+		
+		text = matcher.replaceAll(new Utility().getDate());
+
+		return text;
+		
+		
+	}
+
+}

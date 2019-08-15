@@ -1,0 +1,5 @@
+package com.addressbook.resource;
+
+public class ReadingWritingJson {
+
+}

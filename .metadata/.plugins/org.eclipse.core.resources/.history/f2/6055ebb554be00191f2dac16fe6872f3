@@ -1,0 +1,14 @@
+package com.addressbook.resource;
+
+public class ReadingWritingJson {
+
+	public void readJson()
+	{
+		
+	}
+	public void writeJsoon()
+	{
+		
+	}
+	
+}

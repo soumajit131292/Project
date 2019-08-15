@@ -1,0 +1,25 @@
+package com.addressbook.resource;
+
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+import com.addressbook.model.FamilyMember;
+import com.google.gson.Gson;
+
+public class ReadingWritingJson {
+
+	public void readJson()
+	{
+		
+	}
+	public void writeJson(ArrayList<FamilyMember> list) throws Exception
+	{
+		String path="C:\\Users\\souma\\eclipse-workspace\\addressbook\\src\\com\\addressbook\\resource\\addressbookoffamily.json";
+		
+		Gson gson=new Gson();
+		System.out.println(list);
+		gson.toJson(list,new FileWriter(path));
+		
+	}
+	
+}

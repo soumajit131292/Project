@@ -1,0 +1,14 @@
+package com.bridgelabz.commerciladataprocessing.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class CompanyShares {
+
+	private String stockName;
+	private int shareNumber;
+	private double sharePrice;
+	
+}

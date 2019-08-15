@@ -1,0 +1,38 @@
+{
+	"familybook": [
+		{
+			"firstname": "wege",
+			"lastname": "eh",
+			"address": "rth",
+			"city": "er",
+			"state": "trhr",
+			"zipcode": 5757
+		},
+		{
+			"firstname": "zwsrfs",
+			"lastname": "arw",
+			"address": "rw",
+			"city": "dsgrg",
+			"state": "esst",
+			"zipcode": 12323
+		},
+		{
+			"firstname": "wfliw",
+			"lastname": "wge",
+			"address": "erg",
+			"city": "er",
+			"state": "3rgr",
+			"zipcode": 234
+		}
+	],
+	"friendbook": [
+		{
+			"firstname": "asf",
+			"lastname": "egr",
+			"address": "rth",
+			"city": "erh",
+			"state": "erh",
+			"zipcode": 5675
+		}
+	]
+}

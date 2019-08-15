@@ -1,0 +1,134 @@
+package com.addressbook.main;
+
+import java.util.ArrayList;
+
+import com.addressbook.service.AddressbookImp;
+import com.addressbook.service.AddressbookInterface;
+
+
+
+public class FamilyBook {
+
+	public static void main(String[] args) {
+	
+		
+		ArrayList<Family> familybookarray = new ArrayList<>();
+		//ArrayList<Friend> friendbookarray = new ArrayList<>();
+
+		//Jsonreadwrite readwrite = new Jsonreadwrite();
+
+		//addressbookobject = readwrite.readJson();
+
+		/*if (addressbookobject.getFriendbook() != null) {
+			friendbookarray = addressbookobject.getFriendbook();
+
+		}
+		if (addressbookobject.getFamilybook() != null) {
+			familybookarray = addressbookobject.getFamilybook();
+		}*/
+
+		//Implementing implement = new Implementing();
+
+		int choice;
+		
+		AddressbookInterface addressbookapp=new AddressbookImp(); 
+
+		do {
+			System.out.println(
+					"1.add family person\n2.add friend\n3.edit family city\n4.edit friend city\n6.sort family person last name\n7.sort friend last name\n8.sort family member zipcode\n9.sort friend zip code\n10.delete famile member\n11.delete friend member");
+
+			choice = InputUtility.inputInteger();
+			switch (choice) {
+			// 1 for add family person
+			case 1: {
+
+				familybookarray.add(implement.addFamilyPerson());
+
+				break;
+
+			}
+          //2 for add friend			
+			case 2: {
+
+				friendbookarray.add(implement.addFriendPerson());
+
+				addressbookobject.setFriend(friendbookarray);
+
+				break;
+
+			}
+			// edit family person city
+			case 3: {
+
+				familybookarray = implement.editFamilyCity(familybookarray);
+				addressbookobject.setFamily(familybookarray);
+
+				break;
+
+			}
+
+			// edit friend city
+			case 4: {
+
+				friendbookarray = implement.editFriendCity(friendbookarray);
+				addressbookobject.setFriend(friendbookarray);
+
+				break;
+
+			}
+
+			// sort family person last name
+			case 5: {
+
+				familybookarray = familybook.sortLastnameFamily(familybookarray);
+				addressbookobject.setFamily(familybookarray);
+
+				break;
+
+			}
+			// sort friend by last name
+			case 6: {
+
+				friendbookarray = friendbook.sortLastnameFriend(friendbookarray);
+				addressbookobject.setFriend(friendbookarray);
+
+				break;
+			}
+			// sort family member by zipcode
+			case 7: {
+				familybookarray = familybook.sortZipcodeFamily(familybookarray);
+				addressbookobject.setFamily(familybookarray);
+
+				break;
+			}
+			// sort friend by zipcode
+			case 8: {
+				friendbookarray = friendbook.sortZipcodeFriend(friendbookarray);
+				addressbookobject.setFriend(friendbookarray);
+
+				break;
+			}
+			// delete family person
+			case 9: {
+
+				familybookarray = implement.deletFamily(familybookarray);
+				addressbookobject.setFamily(familybookarray);
+
+				break;
+			}
+			// delete friend
+			case 10: {
+
+				friendbookarray = implement.deletFriend(friendbookarray);
+
+				break;
+			}
+
+			}
+			readwrite.writeJson(addressbookobject);
+		} while (choice < 11);
+
+
+	}
+
+}

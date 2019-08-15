@@ -1,0 +1,11 @@
+package com.bridgelabz.cliniquemanagement.model;
+
+import lombok.Data;
+
+@Data
+public class Appointment {
+
+	private String doctor;
+	private String patient;
+
+}

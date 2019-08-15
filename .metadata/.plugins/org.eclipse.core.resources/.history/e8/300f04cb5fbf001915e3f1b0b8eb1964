@@ -1,0 +1,55 @@
+package com.bridgelabz.programming.oops.cliniquemanagement;
+
+import com.BridgeLabz.Programming.function.InputUtility;
+
+public class Doctor {
+
+	private String doctorName;
+
+	private String doctorId;
+	private String specialization;
+	private String availability;
+
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
+	}
+
+	public void setDoctorId(String doctorId) {
+		this.doctorId = doctorId;
+	}
+
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
+	}
+
+	public void setAvailability(String availability) {
+		this.availability = availability;
+	}
+
+	public String getDoctorName() {
+		return doctorName;
+	}
+
+	public String getDoctorId() {
+		return doctorId;
+	}
+
+	public String getSpecialization() {
+		return specialization;
+	}
+
+	public String getAvailability() {
+		return availability;
+	}
+
+	public String toString()
+	{
+		return doctorName+" "+doctorId+" "+specialization+" "+availability;
+	}
+	
+	public String message()
+	{
+		return "not available";
+	}
+
+}

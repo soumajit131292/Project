@@ -1,0 +1,11 @@
+package com.addressbook.service;
+
+import java.util.ArrayList;
+
+public interface AddressbookInterface {
+
+	public FamilyMember addFamilyPerson();
+	public ArrayList<FamilyMember> editFriendCity(ArrayList<FamilyMember> addressbook);
+	public ArrayList<FamilyMember> deletFamily(ArrayList<FamilyMember> familyarray) throws Exception;
+	
+}

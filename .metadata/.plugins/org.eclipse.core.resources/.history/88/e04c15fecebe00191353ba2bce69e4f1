@@ -1,0 +1,16 @@
+package com.bridgelabz.programming.oops.addressbook;
+
+import java.util.ArrayList;
+
+public interface Operations {
+
+	abstract public Family addFamilyPerson(); 
+	abstract public  Friend addFriendPerson();
+	abstract public ArrayList<Family> editFamilyCity(ArrayList<Family> addressbook);
+	abstract public ArrayList<Friend> editFriendCity(ArrayList<Friend> addressbook);
+	abstract public ArrayList<Family> deletFamily(ArrayList<Family> familyarray) throws Exception;
+	abstract public ArrayList<Friend> deletFriend(ArrayList<Friend> friendarray) throws Exception;
+	
+	
+	
+}

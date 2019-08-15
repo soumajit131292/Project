@@ -1,0 +1,34 @@
+package com.bridgelabz.programming.oops.transactiondetails;
+
+import java.util.ArrayList;
+
+public class Datetimeinqueue extends Bought  {
+
+	
+	@Override
+	public String toString()
+	{
+		return getStockname()+"  "+getStockChanges()+"  "+getLocalTime();
+	}
+
+		public void datetimeinsertioninqueue() throws Exception
+	{
+		Jsonreadwrite readingjson = new Jsonreadwrite();
+		ArrayList<Bought> transaction=readingjson.readjson();
+		
+		Singlylinkliststack<Bought> linklist = new Singlylinkliststack<>();
+
+		for (Bought i : transaction) {
+			linklist.insert(i);
+		}
+
+		linklist.show();
+		
+		
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package com.bridgelabz.cliniquemanagement.service;
+
+import com.bridgelabz.cliniquemanagement.model.Doctor;
+
+public interface AppointInt {
+	
+	public Doctor searchDoctorByName(String doctorName);
+	public Doctor searchDoctorBySpec(String spec);
+	public boolean canTakeAppointment(String doctor, String date);
+	public void takeAppointment() throws Exception ;
+	
+	
+
+}

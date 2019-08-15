@@ -1,0 +1,8 @@
+package com.bridgelabz.cliniquemanagement.model;
+
+public class Appointment {
+
+	private String doctor;
+	private String patient;
+
+}
