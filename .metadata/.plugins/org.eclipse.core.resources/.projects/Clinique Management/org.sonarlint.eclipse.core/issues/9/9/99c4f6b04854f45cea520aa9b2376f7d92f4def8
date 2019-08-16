@@ -1,26 +1,26 @@
 
-Tsquid:S1125q"(Remove the literal "true" boolean value.(ó•Â;H›#RMINORZ
-CODE_SMELL
-_squid:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿH•#RMINORZ
-CODE_SMELL
 q
-squid:S106L"9Replace this use of System.out or System.err by a logger.(¨—Ù„úÿÿÿÿ8†Äù©É-H´&RMAJORZ
-CODE_SMELL
-l
-squid:S106P"9Replace this use of System.out or System.err by a logger.(ñé¨8†Äù©É-H¶&RMAJORZ
+squid:S106N"9Replace this use of System.out or System.err by a logger.(”‡§üÿÿÿÿ8†Äù©É-Hú0RMAJORZ
 CODE_SMELL
 e
-squid:S106="9Replace this use of System.out or System.err by a logger.(‡É»áHš#RMAJORZ
+squid:S106J"9Replace this use of System.out or System.err by a logger.(¢ ÁƒHû0RMAJORZ
 CODE_SMELL
-msquid:S1075"ARefactor your code to get this URI from a customizable parameter.(º´»pH˜#RMINORZ
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(·ûÈ8†Äù©É-Hü0RMAJORZ
+CODE_SMELL
+l
+squid:S106P"9Replace this use of System.out or System.err by a logger.(ñé¨8†Äù©É-Hı0RMAJORZ
+CODE_SMELL
+_squid:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿHş0RMINORZ
 CODE_SMELL
 e
-squid:S106J"9Replace this use of System.out or System.err by a logger.(¢ ÁƒH™#RMAJORZ
+squid:S106="9Replace this use of System.out or System.err by a logger.(‡É»áHÿ0RMAJORZ
 CODE_SMELL
-Ysquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH—#RMINORZVULNERABILITY
-l
-squid:S106"9Replace this use of System.out or System.err by a logger.(·ûÈ8†Äù©É-H·&RMAJORZ
-CODE_SMELL
+Ysquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH€1RMINORZVULNERABILITY
 q
-squid:S106N"9Replace this use of System.out or System.err by a logger.(”‡§üÿÿÿÿ8†Äù©É-Hµ&RMAJORZ
+squid:S106L"9Replace this use of System.out or System.err by a logger.(¨—Ù„úÿÿÿÿ8†Äù©É-H1RMAJORZ
+CODE_SMELL
+Tsquid:S1125q"(Remove the literal "true" boolean value.(ó•Â;H‚1RMINORZ
+CODE_SMELL
+msquid:S1075"ARefactor your code to get this URI from a customizable parameter.(º´»pHƒ1RMINORZ
 CODE_SMELL

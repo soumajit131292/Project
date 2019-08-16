@@ -1,42 +1,42 @@
 
+|squid:S2095i"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(åÑÄÎøÿÿÿÿ8ÕßœÉ-H›1RBLOCKERZBUG
+vsquid:S2259´"CA "NullPointerException" could be thrown; "share" is nullable here.(Ê†õ—ıÿÿÿÿ8ñ„ôŸÉ-Hœ1RMAJORZBUG
+l
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(‡É»á8íæ¥œÉ-H1RMAJORZ
+CODE_SMELL
+l
+squid:S106`"9Replace this use of System.out or System.err by a logger.(‡É»á8ºÊ É-H1RMAJORZ
+CODE_SMELL
+vsquid:S2259…"CA "NullPointerException" could be thrown; "share" is nullable here.(Ê†õ—ıÿÿÿÿ8ÕßœÉ-HŸ1RMAJORZBUG
 m
-squid:S106¥"9Replace this use of System.out or System.err by a logger.(¢›„ú8—ªÍŸÉ-H!RMAJORZ
+squid:S106¥"9Replace this use of System.out or System.err by a logger.(¢›„ú8—ªÍŸÉ-H 1RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(ºãº³úÿÿÿÿ8½¦»¡É-Hò!RMAJORZ
+m
+squid:S106§"9Replace this use of System.out or System.err by a logger.(ö´˜õ8ÕßœÉ-H¡1RMAJORZ
 CODE_SMELL
-vsquid:S2259…"CA "NullPointerException" could be thrown; "share" is nullable here.(Ê†õ—ıÿÿÿÿ8ÕßœÉ-Hş RMAJORZBUG
-|squid:S2095i"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(åÑÄÎøÿÿÿÿ8ÕßœÉ-H§ RBLOCKERZBUG
-l
-squid:S1065"9Replace this use of System.out or System.err by a logger.(‡É»á8™øÈ É-H¦!RMAJORZ
+r
+squid:S106É"9Replace this use of System.out or System.err by a logger.(£¸Ê½ùÿÿÿÿ8„ì£É-H¢1RMAJORZ
 CODE_SMELL
-l
-squid:S106Q"9Replace this use of System.out or System.err by a logger.(‡É»á8íæ¥œÉ-H!RMAJORZ
-CODE_SMELL
-l
-squid:S106o"9Replace this use of System.out or System.err by a logger.(‡É»á8¥úöŸÉ-H!RMAJORZ
-CODE_SMELL
-l
-squid:S106x"9Replace this use of System.out or System.err by a logger.(ÀÎÿĞ8™øÈ É-H§!RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ááí8áÉğ É-H¾!RMAJORZ
+squid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ááí8áÉğ É-H£1RMAJORZ
 CODE_SMELL
 q
-squid:S106v"9Replace this use of System.out or System.err by a logger.(Ñ£„ùûÿÿÿÿ8ÑÉÉ-H  RMAJORZ
+squid:S106v"9Replace this use of System.out or System.err by a logger.(Ñ£„ùûÿÿÿÿ8ÑÉÉ-H¤1RMAJORZ
 CODE_SMELL
 l
-squid:S106`"9Replace this use of System.out or System.err by a logger.(‡É»á8ºÊ É-H©!RMAJORZ
-CODE_SMELL
-r
-squid:S106›"9Replace this use of System.out or System.err by a logger.(»ü»âüÿÿÿÿ8ÕßœÉ-HŸ!RMAJORZ
-CODE_SMELL
-|squid:S2095Z"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(åÑÄÎøÿÿÿÿ8ÕßœÉ-H› RBLOCKERZBUG
-vsquid:S2259´"CA "NullPointerException" could be thrown; "share" is nullable here.(Ê†õ—ıÿÿÿÿ8ñ„ôŸÉ-H‹!RMAJORZBUG
-m
-squid:S106§"9Replace this use of System.out or System.err by a logger.(ö´˜õ8ÕßœÉ-Hª RMAJORZ
-CODE_SMELL
-r
-squid:S106É"9Replace this use of System.out or System.err by a logger.(£¸Ê½ùÿÿÿÿ8„ì£É-H¦ RMAJORZ
+squid:S1065"9Replace this use of System.out or System.err by a logger.(‡É»á8™øÈ É-H¥1RMAJORZ
 CODE_SMELL
 l
-squid:S106)"9Replace this use of System.out or System.err by a logger.(£ÆÏÁ8íæ¥œÉ-Hœ!RMAJORZ
+squid:S106)"9Replace this use of System.out or System.err by a logger.(£ÆÏÁ8íæ¥œÉ-H¦1RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(ºãº³úÿÿÿÿ8½¦»¡É-H§1RMAJORZ
+CODE_SMELL
+r
+squid:S106›"9Replace this use of System.out or System.err by a logger.(»ü»âüÿÿÿÿ8ÕßœÉ-H¨1RMAJORZ
+CODE_SMELL
+l
+squid:S106o"9Replace this use of System.out or System.err by a logger.(‡É»á8¥úöŸÉ-H©1RMAJORZ
+CODE_SMELL
+|squid:S2095Z"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(åÑÄÎøÿÿÿÿ8ÕßœÉ-Hª1RBLOCKERZBUG
+l
+squid:S106x"9Replace this use of System.out or System.err by a logger.(ÀÎÿĞ8™øÈ É-H«1RMAJORZ
 CODE_SMELL

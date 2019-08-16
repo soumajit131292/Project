@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\current\Bridgelabz\src\com\bridgelabz\jsoninventory"/>
+		<item value="D:\current\Bridgelabz\src\com\bridgelabz\datetime"/>
+		<item value="D:\current\Bridgelabz\src\com\bridgelabz\ricepulsewheat"/>
+		<item value="D:\current\Bridgelabz\src\com\bridgelabz\stockexchange"/>
+		<item value="D:\current\Bridgelabz\src\com"/>
 		<item value="C:\Users\souma\current\src"/>
 		<item value="C:\Users\souma\current"/>
 	</list>

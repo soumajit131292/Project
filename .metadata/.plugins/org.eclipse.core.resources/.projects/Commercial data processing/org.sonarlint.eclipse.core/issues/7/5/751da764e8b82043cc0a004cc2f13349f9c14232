@@ -1,17 +1,0 @@
-
-ysquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¬Ο‘ όÿÿÿÿHρ RMAJORZ
-CODE_SMELL
-Άsquid:S1319"pThe type of the "array" object should be an interface such as "List" rather than the implementation "ArrayList".(¬Ο‘ όÿÿÿÿHφ RMINORZ
-CODE_SMELL
-squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(δε‘ΨHς RMINORZ
-CODE_SMELL
-tsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(δε‘ΨHχ RMAJORZ
-CODE_SMELL
-nsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¶ν’¶Hτ RMINORZ
-CODE_SMELL
-ssquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(υ„Hπ RMAJORZ
-CODE_SMELL
-squid:S1319"pThe type of the "array" object should be an interface such as "List" rather than the implementation "ArrayList".(υ„Hυ RMINORZ
-CODE_SMELL
-nsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¶ν’¶Hσ RMINORZ
-CODE_SMELL

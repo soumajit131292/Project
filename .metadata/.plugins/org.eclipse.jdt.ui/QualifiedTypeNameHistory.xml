@@ -5,7 +5,15 @@
 <fullyQualifiedTypeName name="com.addressbook.utility.Utility"/>
 <fullyQualifiedTypeName name="com.bridgelabz.commerciladataprocessing.utility.Utility"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.bridgelabz.cliniquemanagement.util.Utility"/>
 <fullyQualifiedTypeName name="com.bridgelabz.sharemanageinglinkedlist.utility.Utility"/>
+<fullyQualifiedTypeName name="com.BridgeLabz.Programming.Algorithm.Input"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.BridgeLabz.Programming.oops.regex.service.RegexIntr"/>
+<fullyQualifiedTypeName name="com.BridgeLabz.Programming.oops.ricewheatpulse.service.Methodsused"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

@@ -1,6 +1,4 @@
 
-r
-Bsrc/com/bridgelabz/commerciladataprocessing/model/Jsonreading.java,7\5\751da764e8b82043cc0a004cc2f13349f9c14232
 p
 @src/com/bridgelabz/commerciladataprocessing/utility/Utility.java,f\7\f7e8e0beb5ddd9dc27ae7bf907d7c2226ab20fa5
 r
