@@ -1,33 +1,0 @@
-
-squid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(÷îø€8Á—ÜªÉ-Hù&RMAJORZ
-CODE_SMELL
-l
-squid:S106I"9Replace this use of System.out or System.err by a logger.(Ùøô¼8¥ÞªÉ-Hú&RMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(ãš¸þÿÿÿÿ8ì€ƒ«É-Hû&RMAJORZ
-CODE_SMELL
-_squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Á—ÜªÉ-Hü&RMINORZVULNERABILITY
-usquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¹‹ÌÍ8Õý¦É-Hý&RMINORZ
-CODE_SMELL
-l
-squid:S106G"9Replace this use of System.out or System.err by a logger.(ñé¨8¥ÞªÉ-Hþ&RMAJORZ
-CODE_SMELL
-l
-squid:S106k"9Replace this use of System.out or System.err by a logger.(·ûÈ8êâüªÉ-Hÿ&RMAJORZ
-CODE_SMELL
-¸squid:S1186}"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À–¥Ü8ÿâ•¨É-H€'RCRITICALZ
-CODE_SMELL
-l
-squid:S106E"9Replace this use of System.out or System.err by a logger.(¢ Áƒ8¥ÞªÉ-H'RMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(ˆ·ùŽúÿÿÿÿ8÷ô„§É-H‚'RMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(÷èÕþÿÿÿÿ8ÉÆ˜§É-Hƒ'RMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(ãš¸þÿÿÿÿ8Ü¶ƒ«É-H„'RMAJORZ
-CODE_SMELL
-fsquid:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8Õý¦É-H…'RMINORZ
-CODE_SMELL
-l
-squid:S106K"9Replace this use of System.out or System.err by a logger.(¿Ÿ¶œ8¥ÞªÉ-H†'RMAJORZ
-CODE_SMELL

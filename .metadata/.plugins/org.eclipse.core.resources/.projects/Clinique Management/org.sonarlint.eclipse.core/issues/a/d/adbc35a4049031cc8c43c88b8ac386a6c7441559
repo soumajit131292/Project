@@ -1,39 +1,0 @@
-
-tsquid:S1854&"@Remove this useless assignment to local variable "appointments".(πºøµ8øºŒ©…-Hê'RMAJORZ
-CODE_SMELL
-Ñsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(Îñ”¬˝ˇˇˇˇ8¿ºŒ©…-Hí'RMAJORZ
-CODE_SMELL
-q
-squid:S1064"9Replace this use of System.out or System.err by a logger.(˘Á‰≥˛ˇˇˇˇ8ı§£®…-Hë'RMAJORZ
-CODE_SMELL
-jsquid:S1068"1Remove this unused "doctorManager" private field.(Ù¨°ü˚ˇˇˇˇ8“¿◊©…-Hñ'RMAJORZ
-CODE_SMELL
-l
-squid:S1062"9Replace this use of System.out or System.err by a logger.(ÈÏ÷Ø8¿ºŒ©…-Hç'RMAJORZ
-CODE_SMELL
-tsquid:S1126I"AReplace this if-then-else statement by a single return statement.(§ì√O8ı§£®…-Hã'RMINORZ
-CODE_SMELL
-usquid:S1075#"ARefactor your code to get this URI from a customizable parameter.(°¬˚∑8ë—§®…-Hå'RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(çà“™8ÍÌÿ©…-Hâ'RMAJORZ
-CODE_SMELL
-l
-squid:S1061"9Replace this use of System.out or System.err by a logger.(ÿç¬ﬂ8ı§£®…-Hè'RMAJORZ
-CODE_SMELL
-l
-squid:S1068"9Replace this use of System.out or System.err by a logger.(êÌ“€8ı§£®…-Hì'RMAJORZ
-CODE_SMELL
-Ñsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(π—Ÿï¯ˇˇˇˇ8“¿◊©…-Hö'RMAJORZ
-CODE_SMELL
-wsquid:S2095$"HUse try-with-resources or close this "FileReader" in a "finally" clause.(˝∏íé8ë—§®…-Hî'RBLOCKERZBUG
-squid:HiddenFieldCheck&"@Rename "appointments" which hides the field declared at line 17.(πºøµ8ı§£®…-Hó'RMAJORZ
-CODE_SMELL
-esquid:S1481&"1Remove this unused "appointments" local variable.(πºøµ8¿ºŒ©…-Hï'RMINORZ
-CODE_SMELL
-l
-squid:S106>"9Replace this use of System.out or System.err by a logger.(˘ì®ö8ı§£®…-Hò'RMAJORZ
-CODE_SMELL
-Ñsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“¥¸√˘ˇˇˇˇ8Ì¶∆´…-H™'RMAJORZ
-CODE_SMELL
-Ñsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ä¬†ˇ˝ˇˇˇˇ8Ì¶∆´…-H´'RMAJORZ
-CODE_SMELL
