@@ -1,19 +1,0 @@
-
-fsquid:S1199#"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ãæğªÉ-Hò&RMINORZ
-CODE_SMELL
-fsquid:S1199"-Extract this nested code block into a method.(ğÁ–Óûÿÿÿÿ8êù„ªÉ-Hó&RMINORZ
-CODE_SMELL
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ŞÍ¾Óÿÿÿÿÿ8»Æ•«É-Hô&RMAJORZ
-CODE_SMELL
-q
-squid:S106,"9Replace this use of System.out or System.err by a logger.(‹‡çıÿÿÿÿ8ãæğªÉ-Hõ&RMAJORZ
-CODE_SMELL
-l
-squid:S106$"9Replace this use of System.out or System.err by a logger.(¢ Áƒ8ÔÖªÉ-Hö&RMAJORZ
-CODE_SMELL
-fsquid:S1199"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿ8êù„ªÉ-H÷&RMINORZ
-CODE_SMELL
-l
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ºÖñ8ãæğªÉ-Hø&RMAJORZ
-CODE_SMELL

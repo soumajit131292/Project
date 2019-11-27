@@ -1,41 +1,0 @@
-
-j
-squid:S106F"9Replace this use of System.out or System.err by a logger.(ù¹ñ—þÿÿÿÿHŠRMAJORZ
-CODE_SMELL
-j
-squid:S106<"9Replace this use of System.out or System.err by a logger.(’†«ÓþÿÿÿÿH‹RMAJORZ
-CODE_SMELL
-k
-squid:S106²"9Replace this use of System.out or System.err by a logger.(¦Öç²ûÿÿÿÿHŒRMAJORZ
-CODE_SMELL
-ysquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.( çÒþÿÿÿÿHRMAJORZ
-CODE_SMELL
-nsquid:S3986"HMake sure that Week Year "YYYY" is expected here instead of Year "yyyy".(ÐäÿÇHŽRMAJORZBUG
-e
-squid:S1064"9Replace this use of System.out or System.err by a logger.(ƒ†¼ÓHRMAJORZ
-CODE_SMELL
-e
-squid:S106W"9Replace this use of System.out or System.err by a logger.(ºÖñHRMAJORZ
-CODE_SMELL
-e
-squid:S106Ã"9Replace this use of System.out or System.err by a logger.(°•ÞH‘RMAJORZ
-CODE_SMELL
-e
-squid:S106°"9Replace this use of System.out or System.err by a logger.(°•ÞH’RMAJORZ
-CODE_SMELL
-ysquid:S00112#"FDefine and throw a dedicated exception instead of using a generic one.(î»ó¬ÿÿÿÿÿH“RMAJORZ
-CODE_SMELL
-wsquid:S3973P"GUse indentation to denote the code conditionally executed by this "if".(ó¨ûïH”RCRITICALZ
-CODE_SMELL
-k
-squid:S106Å"9Replace this use of System.out or System.err by a logger.(¦Öç²ûÿÿÿÿH•RMAJORZ
-CODE_SMELL
-Žsquid:S14885"\Immediately return this expression instead of assigning it to the temporary variable "name".(Ž¤‚ªùÿÿÿÿH–RMINORZ
-CODE_SMELL
-Žsquid:S1488="\Immediately return this expression instead of assigning it to the temporary variable "name".(Ü°ŒŸÿÿÿÿÿH—RMINORZ
-CODE_SMELL
-´squid:S2681R"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(¥¹ïH˜RMAJORZ
-CODE_SMELL
-ysquid:S2095'"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¹®ÙœÿÿÿÿÿH™RBLOCKERZBUG
-ssquid:S1075%"ARefactor your code to get this URI from a customizable parameter.(ÂªõÿÿÿÿÿHšRMINORZ
-CODE_SMELL
